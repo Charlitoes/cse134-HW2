@@ -21,11 +21,12 @@
     <audio autoplay loop>
       <source src="/assets/Background-music.mp3" type="audio/mp3">
     </audio>
+  </head>
+
+  <body>
     <noscript>
       <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
     </noscript>
-</head>
-  <body>
     <hello-world></hello-world>
     <script src="/js/hello-world.js"></script>
     <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
@@ -49,13 +50,13 @@
         <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
         <img src="/assets/UCSD-logo.jpeg" alt="Image of UCSD logo" width="100" height="100">
       </picture>
-  </body>
 
       <hr>
 
       <search>
-        <form action="/search-results.html">
-          <input type="text" name="q" placeholder="Search...">
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
           <button type="submit">Go</button>
         </form>
       </search>
@@ -76,7 +77,7 @@
     <main>
       <hgroup>
         <h1>Welcome to my portfolio!</h1>
-        <h2>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h2>
+        <p>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</p>
       </hgroup>
 
       <pre><code>
@@ -89,7 +90,7 @@
     <hr>
 
     <aside>
-      <h1>Socials</h1>
+      <h2>Socials</h2>
       <address>
         <a href="https://github.com/Charlitoes">Github</a>
         <br>
@@ -100,6 +101,7 @@
         <a href="tel:+7606726004">+(760)-672-6004</a>
       </address>
     </aside>
+  </body>
 
     <hr>
 
