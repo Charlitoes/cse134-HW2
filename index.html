@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
     <link rel="icon" href="assets/computer-icon.png">
-    <script scr="/js/placeholder.js"></script> 
     <style> 
       header{
         border-color: black;
@@ -18,6 +18,10 @@
         display: inline-block;
       }
     </style>
+    <audio autoplay loop>
+      <source src="\assets\Background-music.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
     <title>Charlie's Portfolio</title>
   </head>
 
@@ -40,10 +44,12 @@
       </ul>
     </nav>
 
+    <hr>
+
     <main>
       <h1>Welcome to my portfolio!</h1>
 
-      <h3>I'm Charlie, a <em>Computer Science</em> major at UCSD.</h3>
+      <h3>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h3>
 
       <pre><code>
         function greet() {
@@ -64,7 +70,23 @@
     </aside>
     
     <hr>
+
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
     
+      // Draw a circle
+      ctx.beginPath();
+      ctx.arc(250, 250, 50, 0, 2 * Math.PI);  // (x, y, radius, startAngle, endAngle)
+      ctx.fillStyle = "blue";  // Set the color to blue
+      ctx.fill();  // Fill the circle with the color
+      ctx.stroke();  // Outline the circle with the current stroke style
+    </script>
+
+    <hr>
+
     <footer>
       <p>Charlie's website © 2025</p>
     </footer>

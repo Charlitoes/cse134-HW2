@@ -11,11 +11,11 @@
           border-style: solid;
           display: inline-block;
         }
-        .mypic{
-            width: 200px;
-            height: auto;
-        }
-      </style>
+    </style>
+    <audio autoplay loop>
+        <source src="\assets\Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <title>Charlie's Portfolio</title>
 </head>
 
@@ -31,19 +31,41 @@
     <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/html/aboutme.html">About Me</a></li>
+          <li><a href="/html/aboutme.html"><i><b>About Me</b></i></a></li>
           <li><a href="/html/projects.html">Projects</a></li>
           <li><a href="/html/skills.html">Skills</a></li>
           <li><a href="/html/contactme.html">Contact Me</a></li>
         </ul>
       </nav>
 
+      <hr>
+
     <h1>About Me</h1>
 
-    <img src="/assets/Charlie's-pic.jpg" alt="Charlie's picture" class="mypic">
+    <img src="/assets/Charlie's-pic.jpg" alt="Charlie's picture" class="mypic" width="200px" height="auto">
+
+    <svg width="500" height="250" xmlns="http://www.w3.org/2000/svg">
+        <!-- Timeline Line -->
+        <line x1="50" y1="200" x2="450" y2="200" stroke="gray" stroke-width="2"/>
+      
+        <!-- Milestones -->
+        <circle cx="150" cy="200" r="10" fill="blue"/>
+        <circle cx="300" cy="200" r="10" fill="green"/>
+        <circle cx="450" cy="200" r="10" fill="orange"/>
+      
+        <!-- Labels -->
+        <text x="71" y="230" font-family="Arial" font-size="14" fill="black">High School(2017-2021)</text>
+        <text x="235" y="230" font-family="Arial" font-size="14" fill="black">College(2021-Present)</text>
+        <text x="435" y="230" font-family="Arial" font-size="14" fill="black">TBD...</text>
+    </svg>
+
+    <blockquote>
+        "The only way to do great work is to love what you do."
+        <cite>— Steve Jobs</cite>
+    </blockquote>
 
     <section class="Enjoyments">
-        <h2>Something</h2>
+        <h2>Some things I enjoy</h2>
         <ul>
             <li><p>I love to <strong>learn new things</strong></p></li>
             <li><p><strong>Solving problems</strong> and finding more <strong>efficent solutions</strong></p></li>
@@ -55,10 +77,23 @@
     <section class="Hobbies">
         <h2>Hobbies</h2>
         <ul>
-            <li><p>Job searching</p></li>
-            <li><p>Listening to music</p></li>
-            <iframe src="https://www.youtube.com/watch?v=e1pZIfretEs&ab_channel=toe" title="(My favorite song right now)" allow="autoplay"></iframe>
-            <li><p>Playing video games</p></li>
+            <details>
+                <summary>Job searching</summary>
+                <p>Still looking!</p>
+            </details>
+          
+            <details>
+                <summary>Listening to music</summary>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/30oddeV4b75MDQ6JvkAXCW?utm_source=generator"
+                width="25%" height="152">
+               </iframe>
+            </details>
+            
+            <details>
+                <summary>Playing video games</summary>
+                <li><p>Final Fantasy</p></li>
+                <li><p>Minecraft</p></li>
+            </details>
         </ul>
     </section>
     <hr>

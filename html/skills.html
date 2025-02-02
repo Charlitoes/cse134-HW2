@@ -11,7 +11,11 @@
           border-style: solid;
           display: inline-block;
         }
-      </style>
+    </style>
+    <audio autoplay loop>
+        <source src="\assets\Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <title>Charlie's Portfolio</title>
 </head>
 
@@ -29,14 +33,48 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/html/aboutme.html">About Me</a></li>
             <li><a href="/html/projects.html">Projects</a></li>
-            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/skills.html"><i><b>Skills</b></i></a></li>
             <li><a href="/html/contactme.html">Contact Me</a></li>
         </ul>
       </nav>
 
+      <hr>
+      
+    <main>
     <h1>Skills</h1>
-    <p>This is the Skills page.</p>
 
+    <section id="skills">
+        <fieldset>
+          <legend>Front-End</legend>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Back-End Skills</legend>
+          <ul>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>SystemVerilog</li>
+          </ul>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Databases</legend>
+            <ul>
+                <li>Postgre</li>
+                <li>SQL</li>
+            </ul>
+        </fieldset>
+      </section>
+
+    <p>This is the Skills page.</p>
+    </main>
     <hr>
 
     <footer>

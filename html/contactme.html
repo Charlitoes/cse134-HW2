@@ -11,7 +11,11 @@
           border-style: solid;
           display: inline-block;
         }
-      </style>
+    </style>
+    <audio autoplay loop>
+        <source src="\assets\Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <title>Charlie's Portfolio</title>
 </head>
 
@@ -31,29 +35,40 @@
             <li><a href="/html/aboutme.html">About Me</a></li>
             <li><a href="/html/projects.html">Projects</a></li>
             <li><a href="/html/skills.html">Skills</a></li>
-            <li><a href="/html/contactme.html">Contact Me</a></li>
+            <li><a href="/html/contactme.html"><i><b>Contact Me</b></i></a></li>
         </ul>
       </nav>
+
+      <hr>
 
     <h1>Contact Me</h1>
 
     <form action="placeholder.script" method="POST">
-    
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
-
+        <br>
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required>
         <br><br>
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         <br>
+        <label for="rating">Your Rating:</label>
+        <select>
+            <optgroup label="Rating">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </optgroup>
+        </select>
+        <br>
         <button type="submit">Send Message</button>
-
     </form>
 
     <hr>
-    
+
     <footer>
         <p>Charlie's website © 2025</p>
     </footer>

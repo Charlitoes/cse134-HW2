@@ -11,7 +11,11 @@
           border-style: solid;
           display: inline-block;
         }
-      </style>
+    </style>
+    <audio autoplay loop>
+        <source src="\assets\Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <title>Charlie's Portfolio</title>
 </head>
 
@@ -28,14 +32,71 @@
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/html/aboutme.html">About Me</a></li>
-            <li><a href="/html/projects.html">Projects</a></li>
+            <li><a href="/html/projects.html"><i><b>Projects</b></i></a></li>
             <li><a href="/html/skills.html">Skills</a></li>
             <li><a href="/html/contactme.html">Contact Me</a></li>
         </ul>
-      </nav>
+    </nav>
 
-    <h1>Projects</h1>
-    <p>This is the Projects page.</p>
+    <hr>
+
+    <main>
+        <section id="projects">      
+            <table>
+                <colgroup>
+                    <col style="background-color: #f4f4f4;">
+                    <col style="background-color: #e0e0e0;">
+                    <col style="background-color: #c0c0c0;">
+                    <col style="background-color: #a8a8a8;">
+                    <col style="background-color: #686767;">
+                </colgroup>
+                <caption><h1>My List of Projects</h1></caption>
+                    <thead>
+                        <tr>
+                        <th>Project Name</th>
+                        <th>Technology</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                        <th style="color: white;">Video Demo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                        <td>MiniMips</td>
+                        <td>SystemVerilog</td>
+                        <td>Completed</td>
+                        <td><a href="https://github.com/Eban-Covarrubias/miniMips_ComputerArchitecture">View Project</a></td>
+                        <td>
+                            <figure>
+                                <video width="400" controls>
+                                    <source src="\assets\CSE141L_finalvideo.mp4" type="video/mp4">
+                                    Your browser doesn't support the video tag
+                                </video>
+                                <figcaption style="color: white;">Video demoing miniMips</figcaption>
+                            </figure>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Gen Z Work Journal</td>
+                        <td>HTML, CSS, JS, React, Node.js</td>
+                        <td>Completed</td>
+                        <td><a href="https://cse110-sp24-group19.github.io/final-project/">View Project</a></td>
+                        <td>
+                            <figure>
+                                <video width="400" controls>
+                                    <source src="\assets\Gen-Z-work-journal-vid.mp4" type="video/mp4">
+                                    Your browser doesn't support the video tag
+                                </video>
+                                <figcaption style="color: white;">Video demoing our work jounal site</figcaption>
+                            </figure>
+                        </td>
+                        </tr>
+                    </tbody>
+            </table>
+          </section>
+
+    </main>
 
     <hr>
 
