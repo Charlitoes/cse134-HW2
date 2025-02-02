@@ -13,7 +13,7 @@
         }
     </style>
     <audio autoplay loop>
-        <source src="\assets\Background-music.mp3" type="audio/mp3">
+        <source src="/assets/Background-music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
     <noscript>
@@ -63,13 +63,13 @@
             <li><a href="/html/projects.html">Projects</a></li>
             <li><a href="/html/skills.html">Skills</a></li>
             <li><a href="/html/contactme.html"><i><b>Contact Me</b></i></a></li>
-            <li><a href="\assets\Resume-Charlie-Trinh.pdf" target="_blank">Resume</li></a>
+            <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</li></a>
         </ul>
       </nav>
 
       <hr>
 
-    <body>
+    
         <h1>Contact Me!</h1>
         <form action="placeholder.script" method="POST">
             <label for="name">Your Name:</label>
@@ -82,7 +82,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
             <br>
             <label for="rating">Your Rating:</label>
-            <select>
+            <select id="rating">
                 <optgroup label="Rating">
                     <option value="5">5</option>
                     <option value="4">4</option>
@@ -94,7 +94,8 @@
             <br>
             <button type="submit" >Send Message</button>
         </form>
-    </body>
+
+
     <hr>
 
     <footer>
