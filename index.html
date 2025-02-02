@@ -11,6 +11,7 @@
     <meta name="description" content="Charlie's personal portfolio">
     <meta name="author" content="Charlie Trinh">
     <link rel="icon" href="assets/computer-icon.png">
+    
     <style> 
       header{
         border-color: black;
@@ -22,11 +23,16 @@
       <source src="\assets\Background-music.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
+    <noscript>
+      <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
+    </noscript>
     <title>Charlie's Portfolio</title>
   </head>
 
   <body>
+    <hello-world></hello-world>
 
+    <script src="\js\hello-world.js"></script>
     <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
       <!-- Face -->
       <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
@@ -72,9 +78,11 @@
     <hr>
 
     <main>
-      <h1>Welcome to my portfolio!</h1>
+      <hgroup>
+        <h1>Welcome to my portfolio!</h1>
 
-      <h2>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h2>
+        <h2>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h2>
+      </hgroup>
 
       <pre><code>
         function greet() {
@@ -87,11 +95,15 @@
 
     <aside>
       <h1>Socials</h1>
-      <div class="Socials">
+      <address>
         <a href="https://github.com/Charlitoes">Github</a>
         <br>
         <a href="https://www.linkedin.com/in/charlie-trinh/">LinkedIn</a>
-      </div>
+        <br>
+        <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+        <br>
+        <a href="tel:+7606726004">+(760)-672-6004</a>
+      </address>
     </aside>
 
     <hr>

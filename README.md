@@ -4,4 +4,4 @@ HTML implementation for my personal portfolio
 
 what i still need in my html code
 
-datalist, template
+datalist, template, dialog
