@@ -43,7 +43,17 @@
       <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
     </svg>
 
-    <header><b>Charlie's Portfolio</b></header>
+    <header>
+      <h1>Charlie's Portfolio</h1>
+
+      <search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
+    </header>
 
       <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
@@ -52,15 +62,7 @@
       </picture>
 
       <hr>
-      <section>
-        <search>
-          <form action="/search" method="get">
-            <label for="query">Search my portfolio:</label>
-            <input type="text" id="query" name="query" placeholder="Search...">
-            <button type="submit">Go</button>
-          </form>
-        </search>
-      </section>
+
 
     <nav>
       <ul>
