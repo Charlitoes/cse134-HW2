@@ -20,14 +20,6 @@
     </style>
   </head>
 
-  <search>
-    <form action="/search" method="get">
-      <label for="query">Search my portfolio:</label>
-      <input type="text" id="query" name="query" placeholder="Search...">
-      <button type="submit">Go</button>
-    </form>
-  </search>
-  
   <body>
     <audio autoplay loop>
       <source src="/assets/Background-music.mp3" type="audio/mp3">
@@ -63,8 +55,14 @@
 
       <hr>
 
-
     <nav>
+      <search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
       <ul>
         <li><a href="/index.html"><i><b>Home</b></i></a></li>
         <li><a href="html/aboutme.html">About Me</a></li>
