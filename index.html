@@ -26,6 +26,21 @@
   </head>
 
   <body>
+
+    <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+      <!-- Face -->
+      <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
+  
+      <!-- Left Eye -->
+      <circle cx="55" cy="60" r="5" fill="black"/>
+      
+      <!-- Right Eye -->
+      <circle cx="95" cy="60" r="5" fill="black"/>
+      
+      <!-- Smile -->
+      <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+
     <header><b>Charlie's Portfolio</b></header>
 
       <picture>
@@ -34,6 +49,15 @@
         <img src="assets\UCSD-logo.jpeg" alt="Image of UCSD logo" width="100" height="100">
       </picture>
 
+      <hr>
+
+      <search>
+        <form action="/search-results.html">
+          <input type="text" name="q" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
+
     <nav>
       <ul>
         <li><a href="/index.html"><i><b>Home</b></i></a></li>
@@ -41,6 +65,7 @@
         <li><a href="html/projects.html">Projects</a></li>
         <li><a href="html/skills.html">Skills</a></li>
         <li><a href="html/contactme.html">Contact Me</a></li>
+        <li><a href="\assets\Resume-Charlie-Trinh.pdf" target="_blank">Resume</li></a>
       </ul>
     </nav>
 
@@ -49,7 +74,7 @@
     <main>
       <h1>Welcome to my portfolio!</h1>
 
-      <h3>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h3>
+      <h2>I'm Charlie, a <em><del>Computer Scientist </del><ins>Computer enthusiast</ins></em> at UCSD.</h2>
 
       <pre><code>
         function greet() {
@@ -61,29 +86,13 @@
     <hr>
 
     <aside>
-      <h2>Socials</h2>
+      <h1>Socials</h1>
       <div class="Socials">
         <a href="https://github.com/Charlitoes">Github</a>
         <br>
         <a href="https://www.linkedin.com/in/charlie-trinh/">LinkedIn</a>
       </div>
     </aside>
-    
-    <hr>
-
-    <canvas id="myCanvas" width="500" height="500"></canvas>
-
-    <script>
-      var canvas = document.getElementById("myCanvas");
-      var ctx = canvas.getContext("2d");
-    
-      // Draw a circle
-      ctx.beginPath();
-      ctx.arc(250, 250, 50, 0, 2 * Math.PI);  // (x, y, radius, startAngle, endAngle)
-      ctx.fillStyle = "blue";  // Set the color to blue
-      ctx.fill();  // Fill the circle with the color
-      ctx.stroke();  // Outline the circle with the current stroke style
-    </script>
 
     <hr>
 

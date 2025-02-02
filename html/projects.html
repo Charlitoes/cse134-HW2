@@ -20,6 +20,20 @@
 </head>
 
 <body>
+    <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+        <!-- Face -->
+        <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
+    
+        <!-- Left Eye -->
+        <circle cx="55" cy="60" r="5" fill="black"/>
+        
+        <!-- Right Eye -->
+        <circle cx="95" cy="60" r="5" fill="black"/>
+        
+        <!-- Smile -->
+        <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+
     <header><b>Charlie's Portfolio</b></header>
 
     <picture>
@@ -28,6 +42,16 @@
         <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="100" height="100">
     </picture>
 
+    <hr>
+      
+    <search>
+      <form action="/search-results.html">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+    </search>
+
+
     <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
@@ -35,6 +59,7 @@
             <li><a href="/html/projects.html"><i><b>Projects</b></i></a></li>
             <li><a href="/html/skills.html">Skills</a></li>
             <li><a href="/html/contactme.html">Contact Me</a></li>
+            <li><a href="\assets\Resume-Charlie-Trinh.pdf" target="_blank">Resume</li></a>
         </ul>
     </nav>
 
