@@ -20,6 +20,14 @@
     </style>
   </head>
 
+  <search>
+    <form action="/search" method="get">
+      <label for="query">Search my portfolio:</label>
+      <input type="text" id="query" name="query" placeholder="Search...">
+      <button type="submit">Go</button>
+    </form>
+  </search>
+  
   <body>
     <audio autoplay loop>
       <source src="/assets/Background-music.mp3" type="audio/mp3">
@@ -45,14 +53,6 @@
 
     <header>
       <h1>Charlie's Portfolio</h1>
-
-      <search>
-        <form action="/search" method="get">
-          <label for="query">Search my portfolio:</label>
-          <input type="text" id="query" name="query" placeholder="Search...">
-          <button type="submit">Go</button>
-        </form>
-      </search>
     </header>
 
       <picture>
