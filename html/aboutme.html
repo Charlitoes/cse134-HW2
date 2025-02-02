@@ -26,19 +26,32 @@
     <noscript>
         <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
       </noscript>
-    <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-        <!-- Face -->
-        <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
+      <canvas id="smileyCanvas" width="150" height="150"></canvas>
+      <script>
+        const canvas = document.getElementById('smileyCanvas');
+        const ctx = canvas.getContext('2d');
     
-        <!-- Left Eye -->
-        <circle cx="55" cy="60" r="5" fill="black"/>
-        
-        <!-- Right Eye -->
-        <circle cx="95" cy="60" r="5" fill="black"/>
-        
-        <!-- Smile -->
-        <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
-      </svg>
+        // Draw face
+        ctx.beginPath();
+        ctx.arc(75, 75, 60, 0, Math.PI * 2); // Face circle
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.stroke();
+
+        // Draw eyes
+        ctx.beginPath();
+        ctx.arc(50, 60, 8, 0, Math.PI * 2); // Left eye
+        ctx.arc(100, 60, 8, 0, Math.PI * 2); // Right eye
+        ctx.fillStyle = 'black';
+        ctx.fill();
+
+        // Draw mouth
+        ctx.beginPath();
+        ctx.arc(75, 80, 40, 0, Math.PI); // Smile (half circle)
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 5;
+        ctx.stroke();
+      </script>
 
     <header><b>Charlie's Portfolio</b></header>
 
