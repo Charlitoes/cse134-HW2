@@ -19,13 +19,18 @@
 </head>
 
 <body>
+    <!-- some background music -->
     <audio autoplay loop>
         <source src="/assets/Background-music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
     <noscript>
         <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
       </noscript>
+
+      <!-- smiley face made with canvas and some JS -->
       <canvas id="smileyCanvas" width="150" height="150"></canvas>
       <script>
         const canvas = document.getElementById('smileyCanvas');
@@ -36,7 +41,6 @@
         ctx.arc(75, 75, 60, 0, Math.PI * 2); // Face circle
         ctx.fillStyle = 'yellow';
         ctx.fill();
-        ctx.stroke();
 
         // Draw eyes
         ctx.beginPath();
@@ -48,13 +52,15 @@
         // Draw mouth
         ctx.beginPath();
         ctx.arc(75, 80, 40, 0, Math.PI); // Smile (half circle)
-        ctx.strokeStyle = 'black';
-        ctx.lineWidth = 5;
-        ctx.stroke();
+        ctx.fill();
+
       </script>
+    <!-- title of my site -->
+      <header>
+        <h1>Charlie's Portfolio</h1>
+      </header>
 
-    <header><b>Charlie's Portfolio</b></header>
-
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
     <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
         <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
@@ -62,15 +68,17 @@
     </picture>
 
     <hr>
-      
+    
+    <!-- search bar -->
     <search>
-      <form action="/search-results.html">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">Go</button>
-      </form>
-    </search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
 
-
+    <!-- nav bar so we can navigate through each page -->
     <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -84,9 +92,11 @@
 
       <hr>
     
+    <!-- main content of this page -->
     <main>
         <h1>About Me</h1>
 
+        <!-- use a custom html tag called profile-card to make the css profile card for myself -->
         <section class="profile">
             <profile-card>
             <div class="profile-content">
@@ -101,7 +111,8 @@
     
         </section>
 
-        <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+        <!-- use svg to create a timeline of my education -->
+        <svg width="500" height="100">
             <!-- Timeline Line -->
             <line x1="50" y1="50" x2="450" y2="50" stroke="gray" stroke-width="2"/>
         
@@ -116,11 +127,13 @@
             <text x="435" y="80" font-family="Arial" font-size="14" fill="black">TBD...</text>
         </svg>
 
+        <!-- used blockquote tag to write out this code as well as kbd tag to type out keyboard presses -->
         <blockquote>
             "It's all <kbd>ctrl</kbd> + <kbd>c</kbd> and <kbd>ctrl</kbd> + <kbd>v</kbd> until something explodes"
             <cite>— Random Computer Scientist</cite>
         </blockquote>
 
+        <!-- section to talk about my personality -->
         <section class="Enjoyments">
             <h2>Some things I enjoy</h2>
             <ul>
@@ -130,7 +143,7 @@
             </ul>
         </section>
 
-
+        <!-- section to talk about my hobbies -->
         <section class="Hobbies">
             <h2>Hobbies</h2>
                 <details>

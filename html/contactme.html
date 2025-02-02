@@ -18,13 +18,18 @@
 </head>
 
 <body>
+    <!-- some background music -->
     <audio autoplay loop>
         <source src="/assets/Background-music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
     <noscript>
         <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
       </noscript>
+
+    <!-- smiley face made with svg -->
     <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
         <!-- Face -->
         <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
@@ -39,8 +44,12 @@
         <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
       </svg>
 
-    <header><b>Charlie's Portfolio</b></header>
+      <!-- title of my site -->
+      <header>
+        <h1>Charlie's Portfolio</h1>
+      </header>
 
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
     <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
         <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
@@ -49,12 +58,14 @@
 
     <hr>
       
+    <!-- search bar -->
     <search>
-      <form action="/search-results.html">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">Go</button>
-      </form>
-    </search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
 
 
     <!--Navagation bar to reach the other pages-->
@@ -70,9 +81,11 @@
       </nav>
 
       <hr>
-
-    
+    <!-- main content of this page -->
+    <main>
         <h1>Contact Me!</h1>
+        <!-- used a form to create a space for text boxes so viewers can send me a message -->
+        <!-- they will need a name, valid email, their message and a rating to be able to send a message through this form -->
         <form action="placeholder.script" method="POST">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
@@ -103,6 +116,7 @@
     <footer>
         <p>Charlie's website © 2025</p>
     </footer>
+</main>
 </body>
 
 </html>

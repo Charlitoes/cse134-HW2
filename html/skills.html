@@ -18,13 +18,18 @@
 </head>
 
 <body>
+    <!-- some background music -->
     <audio autoplay loop>
         <source src="/assets/Background-music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
     <noscript>
         <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
       </noscript>
+
+    <!-- smiley face made with svg -->
     <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
         <!-- Face -->
         <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
@@ -39,8 +44,12 @@
         <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
       </svg>
 
-    <header><b>Charlie's Portfolio</b></header>
+      <!-- title of my site -->
+      <header>
+        <h1>Charlie's Portfolio</h1>
+      </header>
 
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
     <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
         <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
@@ -49,14 +58,16 @@
 
     <hr>
       
+    <!-- search bar -->
     <search>
-      <form action="/search-results.html">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">Go</button>
-      </form>
-    </search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
 
-
+    <!-- nav bar so we can navigate through each page -->
     <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
@@ -70,10 +81,15 @@
 
       <hr>
 
+    <!-- main content for this page -->
     <main>
     <h1>Skills</h1>
-
+    
+    <!-- I put all my skills within this div -->
     <div id="skills">
+
+        <!-- using fieldset I wrapped each section of my skills in separate boxes -->
+        <!-- Front-end fieldset -->
         <fieldset>
           <legend>Front-End</legend>
             <dl>
@@ -85,7 +101,8 @@
                 <dd>A programming language used to create dynamic and interactive effects within web browsers</dd>
             </dl>
         </fieldset>
-      
+        
+        <!-- Back-end fieldset -->
         <fieldset>
           <legend>Back-End Skills</legend>
             <dl>
@@ -102,6 +119,7 @@
             </dl>
         </fieldset>
         
+        <!-- Databases fieldset -->
         <fieldset>
             <legend>Databases</legend>
                 <dl>
@@ -112,6 +130,7 @@
                 </dl>
         </fieldset>
 
+        <!-- Software Development Methodologies fieldset -->
         <fieldset>
             <legend>Software Development Methodologies</legend>
             <p><dfn>Agile</dfn>: A methodology that emphasizes flexiblity, collaboration, and customer feedback</p>
